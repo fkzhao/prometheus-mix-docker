@@ -1,5 +1,5 @@
 [template]
 src = "prometheus-rules.yml.tmpl"
-dest = "/home/work/prometheus-2.30.3.linux-amd64/alert-rules.yml"
+dest = "/prometheus/conf/alert-rules.yml"
 keys = ["/prometheus-rules"]
 reload_cmd = "/usr/bin/curl --connect-timeout 5 --retry 5 --retry-max-time 40 -X POST http://127.0.0.1:9090/-/reload"

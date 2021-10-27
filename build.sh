@@ -3,7 +3,7 @@
 # @Author: zhaofakai
 # @Date:   2021-10-25 15:14:05
 # @Last Modified by:   zhaofakai
-# @Last Modified time: 2021-10-27 23:24:50
+# @Last Modified time: 2021-10-27 23:59:10
 
 set -e
 
@@ -30,5 +30,5 @@ fi
 docker build -t airec-prometheus:v1 .
 
 echo "run airec-prometheus:v1";
-docker run --rm -it -p 8848:8848 -p 9090:9090 airec-prometheus:v1 /bin/bash
+docker run --rm -it airec-prometheus:v1 /bin/bash
 # docker run -d -p 8848:8848 -p 9090:9090 airec-prometheus:v1
