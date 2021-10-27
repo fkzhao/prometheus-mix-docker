@@ -19,4 +19,4 @@ echo "nacos-confd started."
 nohup /home/work/nacos-confd/confd -backend=nacos -node=http://127.0.0.1:8848/nacos -username=nacos -password=nacos -watch > nacos-confd.log 2>&1 &
 # 启动prometheus
 echo "prometheus start."
-/home/work/prometheus-2.30.3.linux-amd64/prometheus --config.file=/prometheus/conf/prometheus.yml --storage.tsdb.path=/prometheus/data --storage.tsdb.retention.time=90d --web.enable-lifecycle
+/home/work/prometheus/prometheus --config.file=/home/work/prometheus/conf/prometheus.yml --storage.tsdb.path=/home/work/prometheus/data --storage.tsdb.retention.time=90d --web.enable-lifecycle
